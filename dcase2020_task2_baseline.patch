@@ -1,0 +1,43 @@
+--- dcase2020_task2_baseline/01_test.py	2021-05-15 12:52:26.213931094 +0900
++++ /lab/task2/dcase2020_task2_baseline/01_test.py	2021-05-01 17:29:36.726326799 +0900
+@@ -63,11 +63,11 @@ def get_machine_id_list_for_test(target_
+             list of machine IDs extracted from the names of test files
+     """
+     # create test files
+-    dir_path = os.path.abspath("{dir}/{dir_name}/*.{ext}".format(dir=target_dir, dir_name=dir_name, ext=ext))
++    dir_path = os.path.abspath("{dir}/*{dir_name}/*.{ext}".format(dir=target_dir, dir_name=dir_name, ext=ext))
+     file_paths = sorted(glob.glob(dir_path))
+     # extract id
+     machine_id_list = sorted(list(set(itertools.chain.from_iterable(
+-        [re.findall('id_[0-9][0-9]', ext_id) for ext_id in file_paths]))))
++        [re.findall('section_[0-9][0-9]', ext_id) for ext_id in file_paths]))))
+     return machine_id_list
+ 
+ 
+@@ -107,14 +107,14 @@ def test_file_list_generator(target_dir,
+     # development
+     if mode:
+         normal_files = sorted(
+-            glob.glob("{dir}/{dir_name}/{prefix_normal}_{id_name}*.{ext}".format(dir=target_dir,
++            glob.glob("{dir}/*{dir_name}/{id_name}*_{prefix_normal}_*.{ext}".format(dir=target_dir,
+                                                                                  dir_name=dir_name,
+                                                                                  prefix_normal=prefix_normal,
+                                                                                  id_name=id_name,
+                                                                                  ext=ext)))
+         normal_labels = numpy.zeros(len(normal_files))
+         anomaly_files = sorted(
+-            glob.glob("{dir}/{dir_name}/{prefix_anomaly}_{id_name}*.{ext}".format(dir=target_dir,
++            glob.glob("{dir}/*{dir_name}/{id_name}*_{prefix_anomaly}_*.{ext}".format(dir=target_dir,
+                                                                                   dir_name=dir_name,
+                                                                                   prefix_anomaly=prefix_anomaly,
+                                                                                   id_name=id_name,
+--- dcase2020_task2_baseline/common.py	2021-05-15 12:52:26.213931094 +0900
++++ /lab/task2/dcase2020_task2_baseline/common.py	2021-05-01 17:39:42.250290331 +0900
+@@ -184,6 +184,7 @@ def select_dirs(param, mode):
+         logger.info("load_directory <- evaluation")
+         dir_path = os.path.abspath("{base}/*".format(base=param["eval_directory"]))
+         dirs = sorted(glob.glob(dir_path))
++    dirs = [f for f in dirs if os.path.isdir(f)]
+     return dirs
+ 
+ ########################################################################

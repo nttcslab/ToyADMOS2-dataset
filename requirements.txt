@@ -1,0 +1,7 @@
+numpy
+pandas
+openpyxl
+fire
+librosa
+soundfile
+tqdm
