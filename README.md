@@ -4,7 +4,7 @@
 
 This repository provides a data mixer tool for ToyADMOS2, a large-scale dataset for anomaly detection in machine operating sounds (ADMOS)
 that consist of a large number of operating sounds of miniature machines (toys) under normal and anomaly conditions by deliberately damaging them.
-You can find the detail of the dataset on the [ToyADMOS2 dataset](zenodo) website.
+You can find the detail of the dataset on the [ToyADMOS2 dataset](https://zenodo.org/record/4580270#.YLniqmb7RzU) website.
 
 If you find the ToyADMOS2 useful in your work, please consider citing our paper.
 
@@ -13,7 +13,7 @@ If you find the ToyADMOS2 useful in your work, please consider citing our paper.
       title={ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions}, 
       author={Noboru Harada and Daisuke Niizumi and Daiki Takeuchi and Yasunori Ohishi and Masahiro Yasuda, and Shoichiro Saito},
       year={2021},
-      eprint={210x.xxxxx},
+      eprint={210x.xxxxx(TBD)},
       archivePrefix={arXiv},
       primaryClass={eess.AS}
 }
@@ -33,7 +33,7 @@ Please try making your own!
 
 ## Download dataset
 
-Visit the [ToyADMOS2 dataset](zenodo) website hosted by http://zenodo.org/, and download.
+Visit the [ToyADMOS2 dataset](https://zenodo.org/record/4580270#.YLniqmb7RzU) website hosted by http://zenodo.org/, and download.
 
 ### Wanna See the Miniature Machines?
 
