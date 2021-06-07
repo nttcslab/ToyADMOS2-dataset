@@ -6,14 +6,14 @@ This repository provides a data mixer tool for ToyADMOS2, a large-scale dataset 
 that consist of a large number of operating sounds of miniature machines (toys) under normal and anomaly conditions by deliberately damaging them.
 You can find the detail of the dataset on the [ToyADMOS2 dataset](https://zenodo.org/record/4580270#.YLniqmb7RzU) website.
 
-If you find the ToyADMOS2 useful in your work, please consider citing our paper.
+If you find the [ToyADMOS2](https://arxiv.org/abs/2106.02369) useful in your work, please consider citing [our paper](https://arxiv.org/abs/2106.02369).
 
 ```BibTeX
 @misc{harada2021toyadmos2,
       title={ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions}, 
       author={Noboru Harada and Daisuke Niizumi and Daiki Takeuchi and Yasunori Ohishi and Masahiro Yasuda, and Shoichiro Saito},
       year={2021},
-      eprint={210x.xxxxx(TBD)},
+      eprint={2106.02369},
       archivePrefix={arXiv},
       primaryClass={eess.AS}
 }
@@ -109,7 +109,7 @@ This repository is an 2021 version, kudos to [@YumaKoizumi](https://github.com/Y
 
 ## References
 
-- [Noboru Harada, Daisuke Niizumi, Daiki Takeuchi, Yasunori Ohishi, Masahiro Yasuda, and Shoichiro Saito, "ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions," 2021](TBD)
+- [Noboru Harada, Daisuke Niizumi, Daiki Takeuchi, Yasunori Ohishi, Masahiro Yasuda, and Shoichiro Saito, "ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions," 2021](https://arxiv.org/abs/2106.02369)
 - [Yuma Koizumi, Shoichiro Saito, Noboru Harada, Hisashi Uematsu and Keisuke Imoto, "ToyADMOS: A Dataset of Miniature-Machine Operating Sounds for Anomalous Sound Detection," WASPAA, 2019](https://arxiv.org/abs/1908.03299)
 - [Ryo Tanabe, Harsh Purohit, Kota Dohi, Takashi Endo, Yuki Nikaido, Toshiki Nakamura, and Yohei Kawaguchi, "MIMII DUE: Sound Dataset for Malfunctioning Industrial Machine Investigation and Inspection with Domain Shifts due to Changes in Operational and Environmental Conditions," 2021](https://arxiv.org/abs/2105.02702)
 - [DCASE 2020 Challenge Task 2 "Unsupervised Detection of Anomalous Sounds for Machine Condition Monitoring"](http://dcase.community/challenge2020/task-unsupervised-detection-of-anomalous-sounds)
