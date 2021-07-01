@@ -2,7 +2,7 @@
 
 # ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions
 
-This repository provides a data mixer tool for ToyADMOS2, a large-scale dataset for anomaly detection in machine operating sounds (ADMOS)
+This repository provides a data mixer tool for ToyADMOS2 🚗 🚃, a large-scale dataset for anomaly detection in machine operating sounds (ADMOS)
 that consist of a large number of operating sounds of miniature machines (toys) under normal and anomaly conditions by deliberately damaging them.
 You can find the detail of the dataset on the [ToyADMOS2 dataset](https://zenodo.org/record/4580270#.YLniqmb7RzU) website.
 
@@ -39,8 +39,8 @@ Visit the [ToyADMOS2 dataset](https://zenodo.org/record/4580270#.YLniqmb7RzU) we
 
 Here're the videos of the toy car and the toy train:
 
-- [Click to play: ToyCarRun.mp4](https://user-images.githubusercontent.com/14831220/118355869-672e7680-b5ad-11eb-947d-e90b1bfeb7ed.mp4)
-- [Click to play: ToyTrainRun.mp4](https://user-images.githubusercontent.com/14831220/118355957-e0c66480-b5ad-11eb-950b-d874cfa0f0a8.mp4)
+- 🚗 [Click to play: ToyCarRun.mp4](https://user-images.githubusercontent.com/14831220/118355869-672e7680-b5ad-11eb-947d-e90b1bfeb7ed.mp4)
+- 🚃 [Click to play: ToyTrainRun.mp4](https://user-images.githubusercontent.com/14831220/118355957-e0c66480-b5ad-11eb-950b-d874cfa0f0a8.mp4)
 
 ## Getting Started
 
