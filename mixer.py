@@ -83,7 +83,7 @@ def process_data_requests(src_df, src_root, dest_root, snr_db, df, rows):
     rows = ['Folder', 'FileID'] + rows
     count = 0
     for src_dir, src_id, ptn, mics, noise, qty in df[rows].values:
-        if ptn == '': continue
+        if ptn == '' or qty == '': continue
         mics = eval(mics) # '[1,2,3]' -> list([1,2,3])
         replaceable = ('R' == str(qty)[0]) # replaceable or not
         qty = int(qty[1:]) if 'R' == str(qty)[0] else int(qty)
