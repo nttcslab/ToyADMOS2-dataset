@@ -9,13 +9,17 @@ You can find the detail of the dataset on the [ToyADMOS2 dataset](https://zenodo
 If you find the [ToyADMOS2](https://arxiv.org/abs/2106.02369) useful in your work, please consider citing [our paper](https://arxiv.org/abs/2106.02369).
 
 ```BibTeX
-@misc{harada2021toyadmos2,
-      title={ToyADMOS2: Another dataset of miniature-machine operating sounds for anomalous sound detection under domain shift conditions}, 
-      author={Noboru Harada and Daisuke Niizumi and Daiki Takeuchi and Yasunori Ohishi and Masahiro Yasuda, and Shoichiro Saito},
-      year={2021},
-      eprint={2106.02369},
-      archivePrefix={arXiv},
-      primaryClass={eess.AS}
+@inproceedings{harada2021toyadmos2,
+    author = "Harada, Noboru and Niizumi, Daisuke and Takeuchi, Daiki and Ohishi, Yasunori and Yasuda, Masahiro and Saito, Shoichiro",
+    title = "{ToyADMOS2}: Another Dataset of Miniature-Machine Operating Sounds for Anomalous Sound Detection under Domain Shift Conditions",
+    booktitle = "Proceedings of the 6th Detection and Classification of Acoustic Scenes and Events 2021 Workshop (DCASE2021)",
+    address = "Barcelona, Spain",
+    month = "November",
+    year = "2021",
+    pages = "1--5",
+    isbn = "978-84-09-36072-7",
+    doi. = "10.5281/zenodo.5770113",
+    _pdf = {https://dcase.community/documents/workshop2021/proceedings/DCASE2021Workshop_Harada_6.pdf}
 }
 ```
 
