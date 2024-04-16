@@ -49,7 +49,7 @@ def process_one(src_pair, src_dirs, rms_pair, dest_file, snr_db):
     # sig, sr_sig = librosa.load(sig_dir/src_signal, sr=None)
     sig, sr_sig = __audioread_load(sig_dir/src_signal, offset=0.0, duration=None, dtype=np.float32)
     sig = librosa.to_mono(sig) # for making sure
-    sig = librosa.resample(sig, sr_sig, FINAL_SR)
+    sig = librosa.resample(sig, orig_sr=sr_sig, target_sr=FINAL_SR)
 
     if snr_db == 'clean':
         # Clean
@@ -62,7 +62,7 @@ def process_one(src_pair, src_dirs, rms_pair, dest_file, snr_db):
         # noi, sr_noi = librosa.load(noise_dir/src_noise, sr=None)
         noi, sr_noi = __audioread_load(noise_dir/src_noise, offset=0.0, duration=None, dtype=np.float32)
         noi = librosa.to_mono(noi) # for making sure
-        noi = librosa.resample(noi, sr_noi, FINAL_SR)
+        noi = librosa.resample(noi, orig_sr=sr_noi, target_sr=FINAL_SR)
 
         k = sig_rms / noise_rms / 10**(snr_db / 20.)
         mixed = (sig * (1. / (1. + k))) + (noi * (k / (1. + k)))
